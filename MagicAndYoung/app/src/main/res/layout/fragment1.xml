@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/firstbg"
+    android:background="@mipmap/bg2"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            android:text="有魔有Young"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+
+   <com.youth.banner.Banner
+       android:id="@+id/banner"
+       android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+       android:layout_marginLeft="50dp"
+       android:layout_marginRight="50dp"
+       android:layout_height="200dp">
+
+   </com.youth.banner.Banner>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp">
+
+            <com.example.nx.magicandyoung.first.MyGridView
+                android:id="@+id/grid"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:stretchMode="spacingWidthUniform">
+
+            </com.example.nx.magicandyoung.first.MyGridView>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/takephoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:elevation="8dp"
+            android:src="@mipmap/takephoto"
+            app:rippleColor="@color/colorGrey"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

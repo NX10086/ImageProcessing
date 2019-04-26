@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这里代码的是创建一个标题栏，左边是返回键-->
+<!--我们设置RelativeLayout布局，id = "title_bar"-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="left"
+    >
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPink"
+        android:text="发布"/>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="back"
+        android:background="@mipmap/fanhui" />
+
+
+
+</RelativeLayout>

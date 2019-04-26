@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这里代码的是创建一个标题栏，左边是返回键-->
+<!--我们设置RelativeLayout布局，id = "title_bar"-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:gravity="left"
+    >
+    <!--一个是显示返回键，一个是显示标题框-->
+    <!--通过TextView来显示，id ： tv_back , tv_main_title -->
+    <ImageView
+        android:id="@+id/user_touxiang"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/black"
+        android:textSize="16dp"
+        android:layout_toRightOf="@+id/user_touxiang"  />
+
+    <ImageView
+        android:id="@+id/redu"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/sq_redu"
+        android:layout_toLeftOf="@id/user_rudu" />
+
+    <TextView
+        android:id="@+id/user_rudu"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="15sp"
+        android:layout_toLeftOf="@id/fenxiang"/>
+
+    <ImageView
+        android:id="@+id/fenxiang"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@mipmap/sq_fenxiang"
+        android:visibility="visible"
+        android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>

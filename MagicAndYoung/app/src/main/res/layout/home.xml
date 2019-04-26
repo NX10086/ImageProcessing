@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hjm="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <com.example.nx.magicandyoung.home.MyBottomTabBar
+        android:id="@+id/bottom_tab_bar"
+        hjm:tab_bar_background="@color/colorPink"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        hjm:tab_divider_background="@color/colorGrey"
+        hjm:tab_divider_height="5dp"
+        hjm:tab_font_size="6sp"
+        hjm:tab_img_font_padding="0dp"
+        hjm:tab_img_height="50dp"
+        hjm:tab_img_width="50dp"
+        hjm:tab_isshow_divider="true"
+        hjm:tab_padding_bottom="5dp"
+        hjm:tab_padding_top="8dp"
+
+        />
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F78EBD"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/colorWhite"
+        app:itemIconTint="@color/colorWhite"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+
+
+
+
+
+

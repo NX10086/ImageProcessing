@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--注册界面-->
+<!--这里的布局放置是： 1 个 ImageView 控件，用于显示用户头像；3 个 EditText 控件，用于输入用户名、密码、再次输入密码；1 个 Button 控件为注册按钮-->
+<!--修改 activity_register.xml 为 LinearLayout 布局-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+    <include layout="@layout/main_title_bar"
+        android:id="@+id/to_login"
+        android:onClick="to_login"
+       />
+
+    <!--引入标题栏-->
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+
+        android:src="@mipmap/touxiang1"/>
+    <!--三个编辑框-->
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="35dp"
+
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:hint="请输入用户名"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="14sp"/>
+    <!--android:background="@drawable/register_user_name_bg"-->
+    <!--android:drawableLeft="@drawable/user_name_icon"-->
+
+<LinearLayout
+    android:id="@+id/xingbie"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="35dp"
+    android:layout_marginRight="35dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="10dp"
+        android:text="性别"
+        android:textColor="#a3a3a3"/>
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginTop="12dp"
+            android:text="男"
+            android:layout_marginLeft="20dp"
+            android:shadowColor="@color/colorBlack"
+            android:textColor="#a3a3a3"/>
+        <RadioButton
+            android:id="@+id/femle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="40dp"
+            android:text="女"
+            android:textColor="#a3a3a3"/>
+    </RadioGroup>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aihao1"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="爱好"
+
+            android:textColor="#a3a3a3"/>
+
+        <CheckBox android:text="宠物"
+            android:id="@+id/like1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:shadowColor="@color/colorPink"
+            android:textColorHighlight="@color/colorPink"
+            android:textColorHint="@color/colorPink"
+            android:textColorLink="@color/colorPink"
+            android:textColor="#a3a3a3"/>
+        <CheckBox android:text="美景"
+            android:id="@+id/like2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="4dp"
+            android:shadowColor="@color/colorPink"
+            android:textColorHighlight="@color/colorPink"
+            android:textColorHint="@color/colorPink"
+            android:textColorLink="@color/colorPink"
+            android:textColor="#a3a3a3"/>
+        <CheckBox android:text="美食"
+            android:id="@+id/like3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="4dp"
+            android:shadowColor="@color/colorPink"
+            android:textColorHighlight="@color/colorPink"
+            android:textColorHint="@color/colorPink"
+            android:textColorLink="@color/colorPink"
+            android:textColor="#a3a3a3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aihao2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+        <CheckBox android:text="明星"
+            android:id="@+id/like4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="59dp"
+            android:layout_marginTop="4dp"
+            android:shadowColor="@color/colorPink"
+            android:textColorHighlight="@color/colorPink"
+            android:textColorHint="@color/colorPink"
+            android:textColorLink="@color/colorPink"
+            android:textColor="#a3a3a3"/>
+        <CheckBox android:text="电影"
+            android:id="@+id/like5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="4dp"
+            android:shadowColor="@color/colorPink"
+            android:textColorHighlight="@color/colorPink"
+            android:textColorHint="@color/colorPink"
+            android:textColorLink="@color/colorPink"
+            android:textColor="#a3a3a3"/>
+        <CheckBox android:text="购物"
+            android:id="@+id/like6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="4dp"
+            android:shadowColor="@color/colorPink"
+            android:textColorHighlight="@color/colorPink"
+            android:textColorHint="@color/colorPink"
+            android:textColorLink="@color/colorPink"
+            android:textColor="#a3a3a3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/riqi"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="10dp"
+            android:text="出生日期"
+            android:textColor="#a3a3a3"/>
+        <ImageView
+            android:id="@+id/consultation_iv_birthdate"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/consultation_et_id_card"
+            android:layout_alignEnd="@+id/consultation_et_birthdate"
+            android:layout_alignRight="@+id/consultation_et_birthdate"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            android:background="@mipmap/rili" />
+        <TextView
+            android:id="@+id/birthdate_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:hint="点击左侧图标选择日期"
+            android:paddingLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="#a3a3a3"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_psw"
+        android:layout_width="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="48dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+
+        android:drawablePadding="10dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="14sp"/>
+    <!--android:background="@drawable/register_psw_bg"-->
+    <!--android:drawableLeft="@drawable/psw_icon"-->
+    <EditText
+        android:id="@+id/et_psw_again"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+
+        android:drawablePadding="10dp"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#a3a3a3"
+        android:textSize="14sp" />
+    <!--android:background="@drawable/register_psw_again_bg"-->
+    <!--android:drawableLeft="@drawable/psw_icon"-->
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPink"
+        android:text="注 册"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"/>
+</LinearLayout>

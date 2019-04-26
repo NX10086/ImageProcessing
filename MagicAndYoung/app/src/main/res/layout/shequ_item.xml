@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp" >
+
+    <include layout="@layout/user_bar"></include>
+
+    <TextView
+        android:id="@+id/fruit_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:textColor="#929294"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/fruit_image"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal" />
+
+    <include layout="@layout/down_bar"></include>
+
+    <TextView
+        android:id="@+id/xian"
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey"/>
+    <LinearLayout
+        android:id="@+id/shequ_liner"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_height="40dp">
+        <EditText
+            android:id="@+id/review_edit"
+            android:layout_width="0dp"
+            android:textColor="@color/colorBlack"
+            android:layout_weight="8"
+           android:drawableBottom="@drawable/solid_shape_bottom_line"
+            android:textCursorDrawable="@drawable/solid_shape_bottom_line"
+
+
+            android:textSize="14sp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/review_sent"
+            android:layout_width="0dp"
+            android:background="@drawable/button_pink"
+            android:layout_weight="2"
+            android:layout_gravity="center"
+            android:text="发表"
+            android:layout_height="30dp" />
+    </LinearLayout>
+
+    <com.example.nx.magicandyoung.second.MyListView
+        android:id="@+id/shequ_list"
+        android:layout_width="match_parent"
+        android:background="@color/colorWhite"
+        android:layout_height="wrap_content">
+
+    </com.example.nx.magicandyoung.second.MyListView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grey"/>
+</LinearLayout>

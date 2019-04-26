@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+ <item
+        android:id="@+id/action_sao"
+        app:showAsAction="always"
+        android:icon="@mipmap/set"
+
+        android:title="编辑"
+       />
+
+  <!--  <item
+        android:id="@+id/action_notification"
+        app:showAsAction="always"
+        android:icon="@mipmap/set"
+        android:title="编辑" />-->
+    <!--<item
+        android:id="@+id/action_item_one"
+        app:showAsAction="always"
+        android:icon="@mipmap/edit"
+        android:title="aaa" />-->
+   <!-- <item
+        android:id="@+id/action_item_two"
+        app:showAsAction="never"
+        android:title="@string/item_two" />-->
+
+
+
+
+</menu>

@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//util/beautify_app/face_lift.py=gbk
+encoding//util/beautify_app/make_up.py=gbk
+encoding//util/compress/k_means_compress.py=GBK
+encoding//util/compress/svd_compress.py=GBK
+encoding//util/remove_watermarking/rm_water.py=utf-8

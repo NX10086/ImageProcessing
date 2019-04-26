@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bg_img1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/initial1"
+        />
+    <ImageView
+        android:id="@+id/bg_img2"
+        android:layout_width="250dp"
+        android:layout_marginTop="100dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@mipmap/initial"
+        />
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/jump"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="56dp"
+            android:background="@drawable/button_cy"
+            android:text="跳过"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

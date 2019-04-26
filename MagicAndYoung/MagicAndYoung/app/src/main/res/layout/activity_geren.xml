@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:leon="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <com.example.nx.magicandyoung.home.SimpleToolBar
+        android:id="@+id/simple_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPink"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+        <TextView
+            android:id="@+id/txt_left_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="返回"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/txt_main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="个人中心"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:visibility="visible" />
+    </com.example.nx.magicandyoung.home.SimpleToolBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="1dp"
+        android:background="@mipmap/fm"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="150dp"
+            android:src="@mipmap/tuzi"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="小飞象"
+        android:textSize="20sp" />
+
+
+
+    <com.leon.lib.settingview.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/xingbie"
+        leon:isShowRightText="true"
+        leon:rightText="女"
+        leon:rightStyle="iconHide"
+        leon:leftText="性别"/>
+
+    <com.leon.lib.settingview.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/shengri"
+        leon:leftText="生日"
+        leon:rightStyle="iconShow"
+        leon:isShowRightText="true"
+        leon:rightText="1998-6-6"/>
+
+    <com.leon.lib.settingview.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/xiangce"
+        leon:leftText="相册"
+        leon:rightStyle="iconShow"
+
+        />
+
+    <com.leon.lib.settingview.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/suozaidi"
+        leon:leftText="所在地"
+        leon:rightStyle="iconShow"
+        leon:isShowRightText="true"
+        leon:rightText="天津市北辰区"/>
+    <com.leon.lib.settingview.LSettingItem
+        android:id="@+id/item_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/dingwei"
+        leon:leftText="获取位置权限"
+        leon:rightStyle="iconSwitch" />
+    <com.leon.lib.settingview.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/paizhaoq"
+        leon:leftText="拍照权限"
+        leon:rightStyle="iconSwitch" />
+
+    <com.leon.lib.settingview.LSettingItem
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_seven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        leon:leftIcon="@mipmap/niming"
+        leon:leftText="匿名发布评论"
+        leon:rightStyle="iconCheck" />
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:background="#ff66b3"
+        android:text="确认修改"
+        android:textColor="#ffffff"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
